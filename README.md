@@ -10,7 +10,7 @@ To enhance the supervisory signal in sky regions, an additional MLP model is add
 ---
 
 ## Model performance
-The final loss is 0.38 compared to the starting point of 0.79.
+The final loss is 0.38 compared to the starting point of 0.79.<br />
 The final psnr is 22.13 compared to the staring poing of 10.26.
 
 <p float="left">
@@ -25,6 +25,8 @@ The result of sky-region reconstruction:
 
 
 Check the video result here:
+
+![IMB_nGcFXK](https://user-images.githubusercontent.com/91255799/234092699-8b9766b3-505c-4739-9e93-e116de734bae.gif)
 
 ---
 
