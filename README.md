@@ -3,7 +3,7 @@
 The project aimed to improve the performance of outdoor scene reconstruction, with a specific focus on the sky regions by proposing and implementing a novel algorithm.
 
 
-[Urban Radience Field (Google Research)](https://urban-radiance-fields.github.io/) is used as the theoretical basis combining with [Neural Scene Graphs for Dynamic Scene (CVPR 2021)](https://light.princeton.edu/publication/neural-scene-graphs/) for this project. Original repository forked from the Implementation of Original [Neural Scene Graph Implementation](https://github.com/princeton-computational-imaging/neural-scene-graphs), [original readme]([./nerf_license/README.md](https://github.com/princeton-computational-imaging/neural-scene-graphs/blob/main/README.md)).
+[Urban Radiance Field (Google Research)](https://urban-radiance-fields.github.io/) is used as the theoretical basis combining with [Neural Scene Graphs for Dynamic Scene (CVPR 2021)](https://light.princeton.edu/publication/neural-scene-graphs/) for this project. Original repository forked from the Implementation of Original [Neural Scene Graph Implementation](https://github.com/princeton-computational-imaging/neural-scene-graphs), [original readme]([./nerf_license/README.md](https://github.com/princeton-computational-imaging/neural-scene-graphs/blob/main/README.md)).
 
 To enhance the supervisory signal in sky regions, an additional MLP model is added to the sky region with a pretrained segmentation [DeepLabV3Plus](https://github.com/VainF/DeepLabV3Plus-Pytorch) model.
 
@@ -11,14 +11,14 @@ To enhance the supervisory signal in sky regions, an additional MLP model is add
 
 ## Model performance
 The final loss is 0.38 compared to the starting point of 0.79.<br />
-The final psnr is 22.13 compared to the staring poing of 10.26.
+The final psnr is 22.13 compared to the starting point of 10.26.
 
 <p float="left">
   <img src="https://github.com/leahlyu22/neural-scene-graphs/blob/main/performance/model_performance_tf.png?raw=true" width="150" height="300" />
   <img src="https://github.com/leahlyu22/neural-scene-graphs/blob/main/performance/model_performance.png?raw=true" width="150" height="300" /> 
 </p>
 
-The top right image is the rendering result only for non-sky-region. The middle right image is the result combining both sky and non-sky region. The bottom right image is the ground-truth image.
+The top right image is the rendering result only for non-sky-region. The middle right image is the result of combining both sky and the non-sky region. The bottom right image is the ground-truth image.
 
 The result of sky-region reconstruction:
  <img src="https://github.com/leahlyu22/neural-scene-graphs/blob/main/performance/rendering_result_sky.png?raw=true">
